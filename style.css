@@ -1,0 +1,353 @@
+ 
+/*nav  */
+main{
+    width: 100%;
+}
+.tour-main {
+width : 90%;
+margin : 0 auto;
+}
+header {
+background-color :black;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+height : 60px;
+-webkit-font-smoothing:antialiased;
+text-rendering:optimizeLegibility;
+}
+#bar{
+    display: flex;
+    flex-wrap: wrap;
+}
+#bar ul {
+list-style-type : none;
+margin : auto;
+overflow : hidden;
+}
+.nav_bar img, #footer img{
+    margin : -18px auto;
+    list-style-type : none;
+    width:75px;
+    height:60px;
+    }
+.nav_bar li {
+float : left;
+}
+.nav_bar li a {
+display : block;
+text-transform : uppercase;
+color : white;
+text-align : center;
+padding : 20px 20px;
+text-decoration : none;
+}
+.nav_bar li a:hover {
+color :black;
+border-top : 3px solid rgb(202, 30, 30) ;
+background-color : white;
+}
+
+
+
+/* slideshow */
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+html{
+font-size: 10px;
+}
+
+body{
+/*     background-color: #000; */
+background-color: white; 
+}
+
+.slideshow{
+width: 100%;
+height: 100vh;
+position: relative;
+overflow: hidden;
+}
+
+.slideshow-item{
+width: inherit;
+height: inherit;
+position: absolute;
+opacity: 0;
+animation: slideanim 51s infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+animation-delay: 0;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img{
+animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img{
+animation-delay: 20s;
+}
+
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img{
+animation-delay: 30s;
+}
+
+.slideshow-item:nth-child(5),
+.slideshow-item:nth-child(5) img{
+animation-delay: 40s;
+}
+
+.slideshow-item img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+animation: zoom 51s infinite;
+}
+
+.slideshow-item-text{
+max-width: 50%;
+position: absolute;
+top: 50%;
+/* transform: 2D transformation methods translateY:moving the element along the Y-axis*/
+/* center text */
+transform: translateY(-50%); 
+left: 0;
+background-color: rgba(0,0,0,0.8);
+color: #fff;
+padding: 10rem 5rem;
+font-family: Arial, Helvetica, sans-serif  ;
+}
+
+.slideshow-item-text h5{
+font-size: 3.0rem;
+letter-spacing: 3px;
+}
+
+.slideshow-item-text p{
+font-weight: 300;
+font-size: 1.3rem;
+margin-top: 2rem;
+}
+
+/* slideshow end */
+
+
+
+/* .button { 
+background-color: rgba(0,0,0,0.8); 
+border: none;
+color: white;
+padding: 13px 18px; 
+text-align: center;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+margin: 8px 2px;
+}
+
+.button1 {
+background-color: white; 
+color: black; 
+border: 2px solid rgba(0,0,0,0.8);
+}
+
+.button1:hover {
+background-color: rgba(0,0,0,0.8);
+color: white;
+}*/
+
+
+/* Style the body */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+}
+
+h2{
+    color:rgb(202, 30, 30);
+    font-size:25px;
+
+}
+
+
+
+/* Column container */
+
+.row {  
+/*  CSS browser prefixes, are a way for browser makers to add support for new CSS features */
+display: -ms-flexbox; /* IE10 */
+display: flex; 
+-ms-flex-wrap: wrap; /* IE10 */
+flex-wrap: wrap;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+-ms-flex: 30%; /* IE10:
+Internet Explorer 10*/
+flex: 30%; 
+background-color: #f1f1f1;  
+padding: 20px;
+text-align: center;
+} 
+
+/* Main column */
+.main {   
+-ms-flex: 70%; /* IE10 */
+flex: 70%;
+background-color: white; 
+padding: 20px;
+text-align: center;
+}
+
+
+
+/*Parallax for home*/
+body, html{
+height:100%;
+margin:0; 
+/*     font-size:16px; */
+font-weight:400;
+line-height:1.8em;
+/* color:#666; */
+color:black;
+font-size:14px;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7{
+position:relative;
+/*opacity:0.70;*/
+background-position:center;
+background-size:cover; 
+background-repeat:no-repeat;
+/*
+fixed= parallax
+scroll= normal
+*/
+background-attachment:fixed;
+/*  border-radius:20px; */
+border: 2px solid rgba(0,0,0,0.8); 
+}
+
+.pimg1{
+background-image:url('https://cdn.theatlantic.com/thumbor/ImFkxH4N5_zW7wzR-roUPaI-y54=/1440x810/media/img/mt/2020/04/GettyImages_944324102_16x9/original.jpg');
+min-height:200px;
+}
+.pimg2{
+background-image:url('https://multimedia.journalism.berkeley.edu/wp-content/uploads/2014/09/voter-registration-main.jpg');
+min-height:200px;
+}
+.pimg3{
+background-image:url('https://cf-images.us-east-1.prod.boltdns.net/v1/static/5615998031001/9141f581-79ba-40e1-a434-6da454fcbad8/470d6e6c-8843-4810-b9e5-faf1062bcf1e/1280x720/match/image.jpg');
+min-height:200px;
+}
+.pimg4{
+background-image:url('https://static01.nyt.com/images/2020/09/29/us/elections/Stressed-Elex-Georgia-YT3-nogfx/Stressed-Elex-Georgia-YT3-nogfx-videoSixteenByNine1050.jpg');
+min-height:200px;
+}
+.pimg5{
+background-image:url('https://i0.wp.com/www.mychesco.com/wp-content/uploads/2020/02/disabled-vote.jpg?resize=735%2C400&ssl=1');
+min-height:200px;
+}
+.pimg6{
+background-image:url('http://colombotimes.net/wp-content/uploads/2020/05/vote-800x445.jpg');
+min-height:200px;
+}
+ /* .section-dark{  
+    max-width: 50%;  */
+    /* position: absolute;  */
+    /* top: 50%;  */
+    /* transform: translateY(-50%); 
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 5rem 5rem; 
+    margin-bottom: 155px;
+  }*/
+/*End of Parallax */
+
+
+
+
+.footer{
+background-color: black;
+margin: 0 auto;
+text-align: center;
+height: 175px;
+/* padding: 20px; */
+color: white;
+display:block;
+width:100%;
+
+
+}
+.logo{
+justify-content: center;
+}
+.fa-instagram, .fa-facebook, .fa-youtube, .fa-twitter{
+color: white;
+padding-left: 20px;
+padding-right: 20px;
+}
+.fa-instagram:hover, .fa-facebook:hover, .fa-youtube:hover, .fa-twitter:hover{
+color: rgb(202, 30, 30);
+padding-left: 20px;
+padding-right: 20px;
+}
+
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row {   
+flex-direction: column;
+}
+}
+
+/* keyframes rule specifies the animation code. */
+@keyframes slideanim{
+25%{
+    opacity: 1;
+}
+40%{
+    opacity: 0;
+}
+}
+
+@keyframes zoom{
+100%{
+    transform: scale(1.3);
+}
+}
+
+ @media screen and (max-width: 1100px){ 
+.slideshow-item-text{
+    max-width: 75%;
+}
+}
+
+ @media screen and (max-width: 768px){ 
+.slideshow-item-text{
+    padding: 3rem 1.5rem;
+}
+} 
+
+@media screen and (max-width: 456px){
+.slideshow-item-text{
+    max-width: 100%;
+    top: inherit;
+    transform: translateY(0);
+    bottom: 0;
+}
+}
